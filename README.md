@@ -1,4 +1,4 @@
-# Title: Loopstudios landing page
+# Title: Chirp landing page
 * Click <a href="https://mercado-joshua.github.io/chirp-landing-page/" target="_blank">here</a> to view the project.
 * Checkout src folder for source code.
 <br>
