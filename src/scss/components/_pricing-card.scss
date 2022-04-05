@@ -1,0 +1,22 @@
+.pricing-card {
+    border: .01rem solid #ffad23;
+    border-radius: .3rem;
+    background: #fbf8f3;
+    padding: 1rem;
+
+    > .price > .description {
+        margin-bottom: 0;
+
+        > .highlight {
+            font-weight: bold;
+            font-size: 3rem;
+            color: #000;
+        }
+    }
+
+    > .benefits {
+        border-top: .01rem solid #cecece;
+        border-bottom: .01rem solid #cecece;
+        padding: 1rem 0;
+    }
+}

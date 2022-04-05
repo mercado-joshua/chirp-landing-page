@@ -1,0 +1,14 @@
+.customer-card {
+    background: #fff;
+    border-radius: .3rem;
+    padding: 1rem;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.493);
+
+    > .databox {
+        > .reaction {
+            > .icon {
+                color: #df1414;
+            }
+        }
+    }
+}

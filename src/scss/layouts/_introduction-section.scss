@@ -1,0 +1,132 @@
+@use '../utils/breakpoints';
+
+.introduction-section {
+    background: #fbf8f3;
+}
+
+.headerbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+    > .title {
+        font-style: italic;
+        color: #3180f5;
+        font-size: 1.5rem;
+    }
+
+    // for large phone and tablets
+    @include breakpoints.media-breakpoint-up( 600px ) {
+        > .menu-btn {
+            display: none;
+        }
+    }
+}
+
+.primary-menu {
+    display: none; // hide the navbar first
+    align-items: center;
+    gap: 1rem;
+
+    // for large phone and tablets
+    @include breakpoints.media-breakpoint-up( 600px ) {
+        display: flex;
+    }
+}
+
+.introbox {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .contentbox {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        > .title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        > .actions {
+            display: flex;
+            flex-direction: column;
+
+            // for large phone and tablets
+            @include breakpoints.media-breakpoint-up( 600px ) {
+                flex-direction: row;
+            }
+        }
+    }
+
+    // for small laptops
+    @include breakpoints.media-breakpoint-up( 768px ) {
+        display: grid;
+        grid-template-columns: 1fr 20rem;
+
+        > .contentbox {
+            order: -1;
+        }
+    }
+
+    // for desktops
+    @include breakpoints.media-breakpoint-up( 992px ) {
+        > .contentbox {
+            > .title {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.community-count {
+    > .avatars {
+        position: relative;
+        height: 3rem;
+
+        > .avatar {
+            position: absolute;
+        }
+
+        > .avatar:nth-child(2) {
+            left: 1.2rem;
+        }
+
+        > .avatar:nth-child(3) {
+            left: 2.3rem;
+        }
+
+        > .avatar:nth-child(4) {
+            left: 3.3rem;
+        }
+
+        > .avatar:nth-child(5) {
+            left: 4.3rem;
+        }
+
+        > .avatar:nth-child(6) {
+            left: 5.3rem;
+        }
+
+        > .avatar:nth-child(7) {
+            left: 6.3rem;
+        }
+
+        > .avatar:nth-child(8) {
+            left: 7.3rem;
+        }
+
+        > .avatar:nth-child(9) {
+            left: 8.3rem;
+        }
+    }
+
+    > .description > .highlight { 
+        color: #1f7898;
+        font-weight: 500; 
+    }
+}

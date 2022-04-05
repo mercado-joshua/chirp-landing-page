@@ -1,0 +1,47 @@
+@use '../utils/breakpoints';
+
+.pricing-section {
+    padding: 3rem 0;
+}
+
+.pricingbox {
+    > .title,
+    > .description {
+        text-align: center;
+    }
+
+    > .title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    > .description {
+        margin-bottom: 2rem;
+    }
+
+    // for large phone and tablets
+    @include breakpoints.media-breakpoint-up( 600px ) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    // for desktop devices and large screens
+    @include breakpoints.media-breakpoint-up( 992px ) {
+        width: 50%;
+    }
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .benefits {
+        > .item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+    }
+}

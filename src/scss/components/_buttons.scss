@@ -1,0 +1,37 @@
+.menu-btn,
+.twitter-btn,
+.link-btn {
+    background: transparent;
+}
+
+.twitter-btn {
+    border-radius: .3rem;
+    background: #1da1f2; 
+    color: #fff;
+    padding: 1rem;
+    font-weight: 500;
+    transition:
+      background 250ms ease-in-out,
+      transform 150ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        background: #499D95;
+        color: #fff;
+    }
+
+    &:active {
+        transform: scale(.99);
+    }
+}
+
+.link-btn {
+    padding: 1rem;
+    font-weight: 500;
+    color: #1f7898;
+    transition: transform 150ms ease-in-out;
+
+    &:active {
+        transform: scale(.99);
+    }
+}
